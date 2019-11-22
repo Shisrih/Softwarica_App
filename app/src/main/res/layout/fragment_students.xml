@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".ui.student.StudentsFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Details"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height = "wrap_content"
+            android:layout_width="match_parent"
+            >
+            <EditText
+                android:layout_height = "wrap_content"
+                android:layout_width = "match_parent"
+                android:hint = "Full Name"
+                android:id="@+id/fullname"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height = "wrap_content"
+            android:layout_width="match_parent"
+            >
+            <EditText
+                android:layout_height = "wrap_content"
+                android:layout_width = "match_parent"
+                android:hint = "Age"
+                android:id="@+id/age"
+                android:inputType="number"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Gender"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginTop="10dp"
+                android:id="@+id/male"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginTop="10dp"
+                android:id="@+id/female"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:layout_marginTop="10dp"
+                android:id="@+id/others"
+                />
+        </RadioGroup>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height = "wrap_content"
+            android:layout_width="match_parent"
+            >
+            <EditText
+                android:layout_height = "wrap_content"
+                android:layout_width = "match_parent"
+                android:hint = "Address"
+                android:id="@+id/address"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonlayout"
+            android:text="Save"
+            android:textColor="#fff"
+            android:id="@+id/addbtn"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+</ScrollView>
